@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+
+}
+
+.container{
+    max-width: 360px;
+    
+}
+
+.card{
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    margin: 0 1rem;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75) ;
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    transition: 0.5s ease;
+
+}
+
+.container:hover .card__img {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .container:hover .hover__img {
+    opacity: 1;
+  }
+
+  .header__img{
+    position: relative;
+  }
+
+  .hover__img{
+        transition: 0.5s ease;
+        opacity:0 ;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;  
+  }
+
+.card__text{
+    padding: 3px;
+}
+
+
+.card__title{
+    color: white;
+    margin: 15px 0;
+    font-size: 23px;
+    font-weight: 600;
+    transition: color 0.5s;
+
+}
+
+.card__title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card__subtitle{
+    color: hsla(215, 52%, 70%, 0.727);
+    font-weight: 300;
+    margin: 17px 0;
+    
+}
+
+
+
+.one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.two{
+    width: 270px;
+  height:0 ;
+  border: 1px solid hsl(215, 32%, 27%);
+  margin: 10px ;
+  display:inline-block;
+
+}
+
+
+
+.etherium{
+    display: flex;
+    align-items: center;
+    
+}
+
+.etherium p{
+    color:  hsl(178, 100%, 50%);
+    padding-left: 7px;
+    font-weight: 600;
+}
+
+
+
+.clock{
+    display: flex;
+    align-items: center;
+}
+
+.clock p{
+    padding-left:7px ;
+    color: hsla(215, 52%, 70%, 0.727);
+}
+
+.three{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.three img{
+    width: 32px;
+border-radius: 50%;
+border: 2px solid  rgba(255, 255, 255, 0.707)
+
+}
+
+.three p{
+    padding-left: 14px;
+    color: rgba(255, 255, 255, 0.871);
+    transition: color 0.5s;
+}
+
+.three p:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+.three span {
+    color: hsl(215, 51%, 70%);
+}
+
+.attribution{
+    margin-top: 20px;
+    font-size: 11px;
+    color: white;
+}
+
+
+
+@media only screen and (max-width:375px) {
+    .card__text {
+        padding: 0px;
+    }
+
+    .two{
+        width: 275px;
+    }
+}
+
+
